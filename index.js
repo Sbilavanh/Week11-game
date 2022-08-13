@@ -1,13 +1,13 @@
-const squares = document.querySelectorAll("squares"); //this will create the square layout of our game
-const playerX = "X"; // this will keep the constant player named X
-const playerO = "O"; // this will keep the constant player named O
-let turn = playerX; // this will let the code that Player X starts the game first
+const squares = document.querySelectorAll(".squares");
+const playerX = "X";
+const playerO = "O";
+let turn = playerX;
 
 const layoutState = Array(squares.length);
 layoutState.fill(null);
 
 const winner = document.getElementById("winner");
-const winnerContextbox = document.getElementById("winnercontextbox");
+const winnerContextbox = document.getElementById("winnerContextbox");
 const winnerAnnounce = document.getElementById("winnerAnnounce");
 const restart = document.getElementById("restart");
 restart.addEventListener("click", newGame);
