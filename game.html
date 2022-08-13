@@ -8,8 +8,34 @@
     <title>Document</title>
 </head>
 
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="game.css">
+
 <body>
 
+    <h1>TIC TAC TOE</h1>
+
+    <div id="layout">
+        <div data-index="1" class="squares rightLine bottomLine"></div>
+        <div data-index="2" class="squares rightLine bottomLine"></div>
+        <div data-index="3" class="squares bottomLine"></div>
+        <div data-index="4" class="squares rightLine bottomLine"></div>
+        <div data-index="5" class="squares rightLine bottomLine"></div>
+        <div data-index="6" class="squares bottomLine"></div>
+        <div data-index="7" class="squares rightLine"></div>
+        <div data-index="8" class="squares rightLine"></div>
+        <div data-index="9" class="squares"></div>
+        <div id="winner" class="winner"></div>
+    </div>
+
+    <div id="winnerContextbox" class="hide">
+        <h2 id="winnerAnnounce">X for the win! Congratulations!</h2>
+        <button id="restart">restart</button>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
